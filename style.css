@@ -1,24 +1,46 @@
 body {
-    margin: 0;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
-section{
-    height: 100%;
-    width: 100%;
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
-.background{
-    opacity: 0.8;
-    background-image: url("img/background.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
-.info{
-    background-color: rgba(200, 200, 200, 0.5);
-}
-
-.name{
-    color: yellow;
-    font-family: 'Roboto', sans-serif;
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
