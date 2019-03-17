@@ -1,23 +1,39 @@
 /* Content style */
 
-#nav-toggle-state {
-	display: none;
+div.main-container {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 30px;
 }
-#nav-toggle-state:checked ~ .navbar-menu {
-	display: block;
-	background-color: rgba(255, 255, 255, 0.3);
+.ecastelo-avatar {
+	margin: 20px auto;
+	height: 256px;
+	width: 256px;
 }
-.navbar-menu a.navbar-item:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-	color: inherit;
+.ecastelo-avatar img {
+	border: solid 6px rgba(255, 255, 255, 0.3);
 }
-
+.contact-options {
+	padding-top: 24px;
+}
+a.button.ecastelo-cv {
+	padding: 0;
+}
+a.button.ecastelo-cv span {
+	font-weight: 900;
+	font-size: xx-large;
+}
+*:focus {
+	outline: 2px solid red !important;
+	outline-offset: 4px !important
+}
 /* Background style */
 body {
-	width: 100vw;
-	height: 100vh;
-	background: linear-gradient(-45deg, rgb(200, 200, 200), rgb(240, 100, 100), rgb(230, 230, 120), rgb(120, 120, 120));
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(-45deg, rgb(200, 200, 200), rgba(230, 30, 30, 0.5), rgb(230, 230, 120), rgb(120, 120, 120));
 	background-size: 400% 400%;
+	font-family: 'Montserrat', sans-serif !important;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
@@ -57,4 +73,14 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+/* Styles overrided */
+.button:hover {
+	border-color: transparent !important;
+}
+a.button {
+	margin: 10px;
+	background-color: transparent;
+	border-color: transparent;
 }
